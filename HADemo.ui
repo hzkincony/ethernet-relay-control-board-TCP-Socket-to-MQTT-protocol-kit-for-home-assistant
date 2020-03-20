@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HADemo</class>
+ <widget class="QMainWindow" name="HADemo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1274</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Home assistant Demo For KC868-Hx Controller  Made by KinCony</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="2">
+     <widget class="QGroupBox" name="gbInput">
+      <property name="title">
+       <string>Input</string>
+      </property>
+      <layout class="QGridLayout" name="glInput"/>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="gbSettings">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Connect</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="gbDevice">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Device</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>IP/Domain</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="leDeviceIp"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLineEdit" name="leDevicePort"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Port</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="gbMQTT">
+         <property name="title">
+          <string>MQTT</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0" rowspan="2" colspan="2">
+           <widget class="QLineEdit" name="leMQTTIp"/>
+          </item>
+          <item row="4" column="0" colspan="2">
+           <widget class="QLineEdit" name="leMQTTPort"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Port</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>IP/Domain</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QPushButton" name="pbConnect">
+         <property name="text">
+          <string>Connect</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="gbDeviceType">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Device Type</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="4" column="1">
+        <widget class="QRadioButton" name="rbH16">
+         <property name="text">
+          <string>KC868-H16</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="rbH4">
+         <property name="text">
+          <string>KC868-H4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QRadioButton" name="rbH8">
+         <property name="text">
+          <string>KC868-H8</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QRadioButton" name="rbH32">
+         <property name="text">
+          <string>KC868-H32</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="rbH2">
+         <property name="text">
+          <string>KC868-H2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="3">
+     <widget class="QGroupBox" name="gbOutput">
+      <property name="title">
+       <string>Output</string>
+      </property>
+      <layout class="QGridLayout" name="glOutput">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="gb1">
+         <property name="title">
+          <string>Group 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGroupBox" name="gb2">
+         <property name="title">
+          <string>Group 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QGroupBox" name="gb3">
+         <property name="title">
+          <string>Group 3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QGroupBox" name="gb4">
+         <property name="title">
+          <string>Group 4</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="3" rowspan="2">
+     <widget class="QPlainTextEdit" name="pteCommand">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1274</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pbConnect</sender>
+   <signal>clicked()</signal>
+   <receiver>HADemo</receiver>
+   <slot>connect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbH2</sender>
+   <signal>clicked()</signal>
+   <receiver>HADemo</receiver>
+   <slot>changeDeviceType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbH4</sender>
+   <signal>clicked()</signal>
+   <receiver>HADemo</receiver>
+   <slot>changeDeviceType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>229</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>266</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbH8</sender>
+   <signal>clicked()</signal>
+   <receiver>HADemo</receiver>
+   <slot>changeDeviceType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbH16</sender>
+   <signal>clicked()</signal>
+   <receiver>HADemo</receiver>
+   <slot>changeDeviceType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>285</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbH32</sender>
+   <signal>clicked()</signal>
+   <receiver>HADemo</receiver>
+   <slot>changeDeviceType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>connect()</slot>
+  <slot>changeDeviceType()</slot>
+ </slots>
+</ui>
