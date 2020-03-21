@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['HADemoMain.py'],
-             pathex=['D:\\Study\\Python\\HADemo'],
+a = Analysis(['hademomain.py'],
+             pathex=['D:\\HADemo-KC868'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -23,11 +23,11 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='HADemoMain',
+          name='hademomain',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False )
+          console=True )
